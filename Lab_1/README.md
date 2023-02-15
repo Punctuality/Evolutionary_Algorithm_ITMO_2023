@@ -1,6 +1,6 @@
 # Лабораторная работа №1
 
-**Дисциплина:** "Эволючионные вычисления"
+**Дисциплина:** "Эволюционные вычисления"
 
 **Дата:** 15/02/2023
 
@@ -50,7 +50,7 @@
 
 Стоит заметить что можно использовать модификации алгоритма Хаффмана (например Адаптивное построение дерева), но в данном случае их использование не приведет к увелечению производительности.
 
-[Вывод программы `python3 main.py`](/Lab_1/python_lab_1/README.md)
+[Вывод программы `python3 main.py`](https://github.com/Punctuality/Evolutionary_Algorithm_ITMO_2023/blob/main/Lab_1/python_lab_1/README.md)
 
 ### Описания программы на Rust
 
@@ -68,7 +68,7 @@
 
 5. `perf_test.rs` - Повторяет функциональность `perf_test.py`
 
-[Вывод программы `cargo run --release`](/Lab_1/rust_lab_1/README.md)
+[Вывод программы `cargo run --release`](https://github.com/Punctuality/Evolutionary_Algorithm_ITMO_2023/blob/main/Lab_1/rust_lab_1/README.md)
 
 ### Выводы по оптимизациям на Rust
 
