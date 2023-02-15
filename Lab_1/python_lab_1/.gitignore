@@ -1,0 +1,6 @@
+# Python gitignore
+__pycache__/
+
+
+# IntelliJ
+.idea

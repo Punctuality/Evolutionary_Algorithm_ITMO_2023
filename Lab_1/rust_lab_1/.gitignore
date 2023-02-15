@@ -1,0 +1,6 @@
+# Rust gitignore
+target
+Cargo.lock
+
+# IntelliJ
+.idea
