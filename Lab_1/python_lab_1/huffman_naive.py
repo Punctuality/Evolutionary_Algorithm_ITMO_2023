@@ -3,19 +3,19 @@ from collections import Counter
 from graph import BinaryNode
 
 
-def huffman_code_tree(node, bin_string=''):
+def huffman_code_table(node, bin_string=''):
     if node.is_leaf:
         return {node.value: bin_string}
     (l, r) = node.children()
     d = dict()
     # Recursive call without tail optimization (won't matter)
     # Can use binary arrays instead of strings (was actually slower)
-    d.update(huffman_code_tree(l, bin_string + '0'))
-    d.update(huffman_code_tree(r, bin_string + '1'))
+    d.update(huffman_code_table(l, bin_string + '0'))
+    d.update(huffman_code_table(r, bin_string + '1'))
     return d
 
 
-def make_tree(nodes):
+def make_htree(nodes):
     while len(nodes) > 1:
         # Usage of lists where ordered queue can be used (nope, didn't give perf boost)
         node1 = nodes[-1]
@@ -39,8 +39,8 @@ def frequency_count(string):
 
 def huffman_encoding(input_str):
     fc = frequency_count(input_str)
-    tree = make_tree(fc)
-    codes = huffman_code_tree(tree)
+    tree = make_htree(fc)
+    codes = huffman_code_table(tree)
     encoded = ''.join([codes[c] for c in input_str])
     return encoded, codes
 

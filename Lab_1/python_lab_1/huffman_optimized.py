@@ -5,18 +5,18 @@ from bisect import insort_right
 from graph import BinaryNode
 
 
-def huffman_code_tree(node, bin_string='') -> Dict[str, str]:
+def huffman_code_table(node, bin_string='') -> Dict[str, str]:
     if node.is_leaf:
         return {node.value: bin_string}
     d = dict()
     # Recursive call without tail optimization (but it's okay the stack limit won't be reached)
     # As it turned out using str is okay, and using binary arrays will be slower
-    d.update(huffman_code_tree(node.left, bin_string + '0'))
-    d.update(huffman_code_tree(node.right, bin_string + '1'))
+    d.update(huffman_code_table(node.left, bin_string + '0'))
+    d.update(huffman_code_table(node.right, bin_string + '1'))
     return d
 
 
-def make_tree(nodes) -> BinaryNode:
+def make_htree(nodes) -> BinaryNode:
     while len(nodes) > 1:
         # Using binary search insert with negative weights
         node2, node1 = nodes[-2:]
@@ -30,9 +30,9 @@ def frequency_queue(string: str) -> List[BinaryNode]:
     return [BinaryNode(k, -v, None, None) for k, v in Counter(string).most_common()]
 
 
-def huffman_encoding(input_str: str) -> (str, dict):
+def huffman_encoding(input_str: str) -> Tuple[str, Dict[str, str]]:
     pq = frequency_queue(input_str)
-    tree = make_tree(pq)
-    codes = huffman_code_tree(tree)
+    tree = make_htree(pq)
+    codes = huffman_code_table(tree)
     encoded = ''.join([codes[c] for c in input_str])
     return encoded, codes

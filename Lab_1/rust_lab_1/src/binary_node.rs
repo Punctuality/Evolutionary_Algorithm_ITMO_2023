@@ -2,7 +2,7 @@ use std::cmp::Ordering;
 use std::fmt::{Display, Formatter};
 use typed_arena::Arena;
 
-#[derive(Clone, Debug, Hash)]
+#[derive(Clone, Debug)]
 pub struct BinaryNode<'g, T> {
     pub value: Option<T>,
     pub weight: usize,

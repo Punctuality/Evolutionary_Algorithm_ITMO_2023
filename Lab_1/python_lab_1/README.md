@@ -1,4 +1,4 @@
-Run tests:
+### Вывод запуска `python3 main.py`
 ```yaml
 Test string: aaaaabbbbbccccccdddddddeeeeeeeeeeeeeffsrt
 Test codes:
@@ -12,6 +12,7 @@ a -> 100
 c -> 101
 e -> 11
 Test encoding: 10010010010010001101101101101110110110110110110100000000000000111111111111111111111111110100010001010010111010110
+
 --------------------
 ALGORITHM: HUFFMAN Python naive
 Size of data: 1000
