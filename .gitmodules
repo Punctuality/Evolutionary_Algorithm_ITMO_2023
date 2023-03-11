@@ -1,3 +1,6 @@
 [submodule "Lab_2/watchmaker"]
 	path = Lab_2/watchmaker
 	url = https://github.com/dwdyer/watchmaker.git
+[submodule "Lab_3/code"]
+	path = Lab_3/code
+	url = https://gitlab.com/Punctuality/evolutionary-algorithm-itmo-2023-lab-3.git
