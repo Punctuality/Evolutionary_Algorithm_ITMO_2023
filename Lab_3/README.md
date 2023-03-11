@@ -271,7 +271,7 @@ protected void compute() {
 
 Стоит заметить что такой подход к написанию данного модуля позволил достаточно эффективно утилизировать ресурсы и значительно ускорить процесс выполнения экспериментов.
 
-![proc_load](images/proc_load.jpg)
+![proc_load](https://github.com/Punctuality/Evolutionary_Algorithm_ITMO_2023/blob/main/Lab_3/images/proc_load.jpg?raw=true)
 
 ### Поиск оптимальных параметров алгоритма
 
