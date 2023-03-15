@@ -4,3 +4,6 @@
 [submodule "Lab_3/code"]
 	path = Lab_3/code
 	url = https://gitlab.com/Punctuality/evolutionary-algorithm-itmo-2023-lab-3.git
+[submodule "Lab_4/code"]
+	path = Lab_4/code
+	url = https://gitlab.com/Punctuality/evolutionary-algorithm-itmo-2023-lab-4.git
