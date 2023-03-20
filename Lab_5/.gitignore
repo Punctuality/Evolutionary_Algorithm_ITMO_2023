@@ -6,5 +6,6 @@
 project/
 .classpath
 ./target/
+target/
 .metals/
 metals.sbt
