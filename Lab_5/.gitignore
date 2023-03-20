@@ -3,8 +3,8 @@
 .vscode/
 .bloop/
 .project
+project/
 .classpath
 ./target/
+.metals/
 metals.sbt
-
-# External tool builders
