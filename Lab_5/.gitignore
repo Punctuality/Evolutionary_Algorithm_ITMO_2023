@@ -1,0 +1,10 @@
+.idea/
+.bsp/
+.vscode/
+.bloop/
+.project
+.classpath
+./target/
+metals.sbt
+
+# External tool builders
