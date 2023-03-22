@@ -36,3 +36,12 @@ object QueensSolution:
   given Show[QueensSolution] with
     override def show(solution: QueensSolution): String = 
       solution.queens.zipWithIndex.map((r, idx) => s"$idx->$r").mkString("[", ", ", "]")
+
+  object MatrixLike:
+    given Show[QueensSolution] with
+      override def show(solution: QueensSolution): String = 
+        val queens = solution.queens
+        val dimension = queens.length
+        val matrix = Array.fill(dimension, dimension)('.')
+        queens.zipWithIndex.foreach((r, c) => matrix(r)(c) = '#')
+        matrix.map(_.mkString(" ")).mkString("\n")

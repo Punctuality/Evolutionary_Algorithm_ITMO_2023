@@ -11,14 +11,14 @@ import org.uncommons.watchmaker.framework.termination.*
 import scala.jdk.CollectionConverters.*
 
 object Main extends App:
-  val dimension = 200
-  val populationSize = 10
-  val generations = 10000
+  val dimension = 3
+  val populationSize = 100
+  val generations = 1000
   val random = java.util.Random()
 
   val factory = QueensFactory(dimension)
   val operators = List(
-    QueensCrossover(3, 0.05),
+    QueensCrossover(5, 0.05),
     QueensMutation(QueensMutation.MutationType.Swap, 0.5)
   )
   val pipeline = EvolutionPipeline(operators.asJava)
@@ -43,6 +43,7 @@ object Main extends App:
       if iter % 100 == 0 || iter == generations then
           val bestFit = populationData.getBestCandidateFitness();
           System.out.println(s"Generation ${populationData.getGenerationNumber()}: $bestFit");
+      if iter % 1000 == 0 || iter == generations then
           val best: QueensSolution = populationData.getBestCandidate();
           System.out.println(s"\tBest solution = ${best.show}")
 
@@ -56,6 +57,9 @@ object Main extends App:
 
   val startTime = System.currentTimeMillis()
   val result = algorithm.evolve(populationSize, 1, terminate)
-  System.out.println(s"Result (${evaluator.getFitness(result, null)}) = ${result.show}")
+  
+  import lab5.evoalgo.QueensSolution.MatrixLike.given
+  System.out.println(s"Result (${evaluator.getFitness(result, null)}) = \n${result.show}")
+  
   val endTime = System.currentTimeMillis()
   println(s"Time: ${endTime - startTime} ms")

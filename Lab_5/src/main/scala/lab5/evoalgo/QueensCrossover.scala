@@ -6,12 +6,13 @@ import java.util
 import com.google.common.collect.ImmutableList
 import java.util.Arrays
 
-class QueensCrossover(maxLenSwapped: Int, crossoverProbability: Double) 
+class QueensCrossover(maxLenSwappedProc: Int, crossoverProbability: Double) 
   extends AbstractCrossover[QueensSolution](1, Probability(crossoverProbability)):
 
   private def orderCrossover(from: Array[Int], to: Array[Int], rng: util.Random): Array[Int] =
     val toNew = to.clone
 
+    val maxLenSwapped = (maxLenSwappedProc * from.length / 100.0).ceil.toInt
     val swapSegmentLen = rng.nextInt(maxLenSwapped) + 1
     val swapPoint = rng.nextInt(from.length - swapSegmentLen)
     val swapSegment = from.slice(swapPoint, swapPoint + swapSegmentLen)

@@ -1,0 +1,19 @@
+Dimension,PopulationSize,Generations,Crossover MaxLen,Crossover Prob,Mutations,SelectionType,EngineType,Best result,Mean first achieved iter,Mean finished eval at,Mean eval ime
+50,100,10000,10,0.1,LocalSwap(1)[10%],RouletteWheel,SteadyState,8.0,3302.0,10000.0,19010.4
+50,100,10000,10,0.1,LocalSwap(1)[50%],RouletteWheel,SteadyState,6.0,1994.2,10000.0,40974.5
+50,100,10000,10,0.1,LocalSwap(1)[90%],RouletteWheel,SteadyState,4.0,2677.0,10000.0,28661.2
+50,100,10000,10,0.1,Swap[10%],RouletteWheel,SteadyState,0.0,4066.0,4141.4,6806.5
+50,100,10000,10,0.1,Swap[50%],RouletteWheel,SteadyState,0.0,220.0,743.4,1256.0
+50,100,10000,10,0.1,Swap[90%],RouletteWheel,SteadyState,0.0,1394.0,785.6,1341.1
+50,100,10000,10,0.1,Insertion[10%],RouletteWheel,SteadyState,10.0,2875.4,9761.9,17528.4
+50,100,10000,10,0.1,Insertion[50%],RouletteWheel,SteadyState,6.0,7626.2,10000.0,34274.6
+50,100,10000,10,0.1,Insertion[90%],RouletteWheel,SteadyState,6.0,3098.4,10000.0,33321.8
+50,100,10000,10,0.1,Swap[10%]+Inversion(5)[10%],RouletteWheel,SteadyState,0.0,4109.0,1899.5,3207.2
+50,100,10000,10,0.1,Swap[50%]+Inversion(5)[50%],RouletteWheel,SteadyState,0.0,938.5,2152.8,3719.8
+50,100,10000,10,0.1,Swap[90%]+Inversion(5)[90%],RouletteWheel,SteadyState,0.0,965.3,4460.3,8025.2
+50,100,10000,10,0.1,Inversion(5)[10%],RouletteWheel,SteadyState,2.0,4451.2,10000.0,19199.1
+50,100,10000,10,0.1,Inversion(5)[50%],RouletteWheel,SteadyState,0.0,2380.0,8883.2,16372.0
+50,100,10000,10,0.1,Inversion(5)[90%],RouletteWheel,SteadyState,2.0,1804.0,10000.0,18794.1
+50,100,10000,10,0.1,Scramble(5)[10%],RouletteWheel,SteadyState,2.0,6208.6,9840.3,18142.8
+50,100,10000,10,0.1,Scramble(5)[50%],RouletteWheel,SteadyState,2.0,7290.0,10000.0,51096.4
+50,100,10000,10,0.1,Scramble(5)[90%],RouletteWheel,SteadyState,0.0,5312.0,9882.5,74144.7

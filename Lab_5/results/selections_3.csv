@@ -1,0 +1,9 @@
+Dimension,PopulationSize,Generations,Crossover MaxLen,Crossover Prob,Mutations,SelectionType,EngineType,Best result,Mean first achieved iter,Mean finished eval at,Mean eval ime
+70,80,10000,10,0.1,Swap[40%],RouletteWheel,SteadyState,0.0,1056.0,1516.9,3672.45
+70,80,10000,10,0.1,Swap[40%],StochasticUniversalSampling,SteadyState,0.0,783.0,1871.9,4151.75
+70,80,10000,10,0.1,Swap[40%],Rank,SteadyState,0.0,412.0,1086.85,2413.55
+70,80,10000,10,0.1,Swap[40%],Tournament(0.6),SteadyState,0.0,3757.8,7437.75,34597.75
+70,80,10000,10,0.1,Swap[40%],Tournament(0.9),SteadyState,0.0,516.0,2774.25,9140.95
+70,80,10000,10,0.1,Swap[40%],Truncation(0.3),SteadyState,0.0,195.0,866.45,1757.2
+70,80,10000,10,0.1,Swap[40%],Truncation(0.5),SteadyState,0.0,402.0,791.95,1778.4
+70,80,10000,10,0.1,Swap[40%],Truncation(0.9),SteadyState,0.0,1453.0,3555.85,15731.25

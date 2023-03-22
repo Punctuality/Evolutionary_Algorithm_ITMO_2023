@@ -36,7 +36,7 @@ class QueensMutation(
 
         val (left, right) = (min(idx1, idx2), max(idx1, idx2))
 
-        newSolution(left) = candidate.queens(right)
+        newSolution(left + 1) = candidate.queens(right)
         System.arraycopy(
           candidate.queens,
           left + 1,
