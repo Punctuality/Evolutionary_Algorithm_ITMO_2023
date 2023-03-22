@@ -1,0 +1,3 @@
+Dimension,PopulationSize,Generations,Crossover MaxLen,Crossover Prob,Mutations,SelectionType,EngineType,Best result,Mean first achieved iter,Mean finished eval at,Mean eval ime
+70,80,10000,10,0.1,Swap[40%],Truncation(0.5),SteadyState,0.0,220.0,839.35,1405.8
+70,80,10000,10,0.1,Swap[40%],Truncation(0.5),Generational,0.0,184.0,368.95,830.1

@@ -1,0 +1,11 @@
+.idea/
+.bsp/
+.vscode/
+.bloop/
+.project
+project/
+.classpath
+./target/
+target/
+.metals/
+metals.sbt

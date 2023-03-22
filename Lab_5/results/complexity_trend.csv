@@ -1,0 +1,10 @@
+Dimension,PopulationSize,Generations,Crossover MaxLen,Crossover Prob,Mutations,SelectionType,EngineType,Best result,Mean best result,Mean first achieved iter,Mean finished eval at,Mean eval ime
+8,100,10000,10,0.1,Swap[40%],Truncation(0.5),Generational,0.0,0.0,1.0,2.2,43.6
+20,100,10000,10,0.1,Swap[40%],Truncation(0.5),Generational,0.0,0.0,40.0,59.3,240.2
+50,100,10000,10,0.1,Swap[40%],Truncation(0.5),Generational,0.0,0.0,98.0,167.4,792.5
+70,100,10000,10,0.1,Swap[40%],Truncation(0.5),Generational,0.0,0.0,169.0,233.1,1130.1
+90,100,10000,10,0.1,Swap[40%],Truncation(0.5),Generational,0.0,0.0,430.0,481.1,2734.4
+110,100,10000,10,0.1,Swap[40%],Truncation(0.5),Generational,0.0,0.0,391.0,638.8,4552.3
+130,100,10000,10,0.1,Swap[40%],Truncation(0.5),Generational,0.0,0.0,855.0,673.0,6523.9
+160,100,10000,10,0.1,Swap[40%],Truncation(0.5),Generational,0.0,0.0,422.0,827.9,10002.0
+200,100,10000,10,0.1,Swap[40%],Truncation(0.5),Generational,0.0,0.0,1056.0,814.6,12230.1
