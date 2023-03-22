@@ -11,7 +11,7 @@ import org.uncommons.watchmaker.framework.termination.*
 import scala.jdk.CollectionConverters.*
 
 object Main extends App:
-  val dimension = 3
+  val dimension = 8
   val populationSize = 100
   val generations = 1000
   val random = java.util.Random()
