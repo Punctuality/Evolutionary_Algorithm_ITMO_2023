@@ -33,7 +33,7 @@ class GridEvaluator[F[_]: Async: Files: Console, S: Show, R](
           Stream
             .emits(setups.map(ms.fromProduct(_)))
             .zipWithIndex
-            .parEvalMapUnbounded( (params, idx) =>
+            .evalMap( (params, idx) =>
               for
                 results <- experimentRunner.run(params).map(params -> _)
                 count <- finished.updateAndGet(1.+)

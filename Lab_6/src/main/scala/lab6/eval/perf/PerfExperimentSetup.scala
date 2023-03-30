@@ -15,8 +15,13 @@ object PerfExperimentSetup:
   enum AlgoType:
     case SingleThreaded
     case MasterSlave
-    case Islands(islandCount: Int, epochLength: Int, migrationCount: Int):
-      override def toString(): String = 
+    case Islands(islandCount: Int, epochLength: Int, migrationCount: Int)
+
+  given Show[AlgoType] with
+    def show(algoType: AlgoType): String = algoType match
+      case AlgoType.SingleThreaded => "SingleThreaded"
+      case AlgoType.MasterSlave => "MasterSlave"
+      case AlgoType.Islands(islandCount, epochLength, migrationCount) => 
         s"Islands($islandCount)"
 
   given Show[PerfExperimentSetup] with

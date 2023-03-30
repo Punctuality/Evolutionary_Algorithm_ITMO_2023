@@ -1,6 +1,7 @@
 package lab6
 
 import cats.effect.*
+import cats.syntax.show.*
 import cats.effect.unsafe.IORuntimeConfig
 
 import java.{util => ju}
@@ -45,7 +46,7 @@ object ExperimentRun extends IOApp:
         params.dimension,
         params.populationSize,
         params.generations,
-        params.algoType.toString(),
+        params.algoType.show,
         params.complexity,
         bestResult.bestResult,
         results.map(_.bestResult).mean,
