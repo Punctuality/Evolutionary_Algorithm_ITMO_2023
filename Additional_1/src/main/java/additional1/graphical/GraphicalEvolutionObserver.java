@@ -88,7 +88,7 @@ public class GraphicalEvolutionObserver extends JFrame implements EvolutionObser
 
         JPanel edgesDisplay = new JPanel() {
             int adjustX(double x) {
-                return (int) ((x - minX) / (maxX - minX) * (this.getWidth() - 50)) + 25;
+                return (int) ((x - minX) / (maxX - minX) * (this.getWidth() - 50)) + 15;
             }
             int adjustY(double y) {
                 return (int) ((y - minY) / (maxY - minY) * (this.getHeight() - 50)) + 25;

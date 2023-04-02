@@ -23,12 +23,12 @@ import java.util.Random;
 public class TspAlg {
 
     public static void main(String[] args) throws Exception {
-        String problem = "WI29"; // name of problem or path to input file
+        String problem = "ZI929"; // name of problem or path to input file
 
         int populationSize = 200; // size of population
-        int generations = 50000; // number of generations
+        int generations = 100000; // number of generations
 
-        Random random = new Random(45); // random
+        Random random = new Random(); // random
 
 
         File tspFile = new File(String.format("src/main/resources/%s.tsp", problem.toLowerCase()));
@@ -77,7 +77,7 @@ public class TspAlg {
         TerminationCondition terminate = new CombinedTerminationCondition(
                 CombinedTerminationCondition.CombineType.OR,
                 new GenerationCount(generations + 1),
-                new TargetFitness(27749, false)
+                new TargetFitness(95346, false)
         );
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         graphics.start();
